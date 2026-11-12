@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/ytmp3.js": { "maxDuration": 60 }
+  },
+  "rewrites": [
+    { "source": "/downloader/v1/ytmp3", "destination": "/api/ytmp3" },
+    { "source": "/downloader/ytmp3", "destination": "/api/ytmp3" },
+    { "source": "/", "destination": "/api/ytmp3" }
+  ]
+}
